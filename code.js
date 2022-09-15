@@ -27,7 +27,10 @@ function isFive(input) {
 }
 
 function isEven(input) {
-    return true;
+    if ((input % 2 == 0) == true) {
+        return true;
+    }
+    return false;
 }
 
 console.log(isEven(1))

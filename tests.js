@@ -56,8 +56,7 @@ describe("isFive", function() {
         expect(isFive(5)).toBe(true);
     })
 });
-// returns a boolean no matter the input
-// returns true when executed with isEven(2)
+
 //     returns true when executed with isEven(-4)
 //     returns false when executed with isEven(3)
 //     returns false when called with isEven("banana")
@@ -68,5 +67,11 @@ describe("isFive", function() {
 describe("isEven", function() {
     it("should return a boolean", function () {
         expect(typeof isEven()).toBe("boolean");
+    })
+    it("should return true when isEven(2) is executed", function () {
+        expect(isEven(2)).toBe(true);
+    })
+    it("should return true when isEven(-4) is executed", function () {
+        expect(isEven(-4)).toBe(true);
     })
 });
