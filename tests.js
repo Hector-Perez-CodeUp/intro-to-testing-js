@@ -58,8 +58,6 @@ describe("isFive", function() {
 });
 
 
-//     return false when called with a boolean input like isEven(true) or isEven(false)
-// returns false when called without an argument like isEven()
 describe("isEven", function() {
     it("should return a boolean", function () {
         expect(typeof isEven()).toBe("boolean");
@@ -83,6 +81,9 @@ describe("isEven", function() {
         expect(isEven(Infinity)).toBe(false);
     })
     it("should return false when isEven(true) or isEven(false) is executed", function () {
+        expect(isEven(Infinity)).toBe(false);
+    })
+    it("should return false when isEven() is executed", function () {
         expect(isEven(Infinity)).toBe(false);
     })
 });
