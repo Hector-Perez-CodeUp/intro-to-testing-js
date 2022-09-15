@@ -20,11 +20,17 @@ function sayHello(name) {
 }
 
 function isFive(input) {
-    if (typeof(input) == 5 || input == "5") {
+    if (parseInt(input) == 5 ){
         return true;
     }
     return false;
 }
+
+//     if (input == 5 || input == "5") {
+//         return true;
+//     }
+//     return false;
+// }
 
 function isEven(input) {
     if ((input % 2 == 0) == true) {
@@ -32,5 +38,3 @@ function isEven(input) {
     }
     return false;
 }
-
-console.log(isEven(Infinity))
