@@ -33,8 +33,12 @@ function isFive(input) {
 // }
 
 function isEven(input) {
-    if ((input % 2 == 0) == true) {
+    if (typeof(input) == "boolean" || typeof(Number(input)) != "number") {
+        return false;
+    } else if ((input % 2 == 0) == true) {
         return true;
     }
     return false;
 }
+
+console.log((Number(false)))

@@ -80,10 +80,13 @@ describe("isEven", function() {
     it("should return false when isEven(Infinity) is executed", function () {
         expect(isEven(Infinity)).toBe(false);
     })
-    it("should return false when isEven(true) or isEven(false) is executed", function () {
-        expect(isEven(Infinity)).toBe(false);
+    it("should return false when isEven(true) or is executed", function () {
+        expect(isEven(true)).toBe(false);
+    })
+    it("should return false when isEven(false) is executed", function () {
+        expect(isEven(false)).toBe(false);
     })
     it("should return false when isEven() is executed", function () {
-        expect(isEven(Infinity)).toBe(false);
+        expect(isEven()).toBe(false);
     })
 });
