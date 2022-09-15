@@ -25,4 +25,9 @@ function isFive(input) {
     }
     return false;
 }
-console.log(isFive(5));
+
+function isEven(input) {
+    return true;
+}
+
+console.log(isEven(1))
