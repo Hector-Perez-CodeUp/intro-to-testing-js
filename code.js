@@ -33,4 +33,4 @@ function isEven(input) {
     return false;
 }
 
-console.log(isEven(1))
+console.log(isEven(Infinity))

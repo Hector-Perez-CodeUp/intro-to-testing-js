@@ -57,8 +57,7 @@ describe("isFive", function() {
     })
 });
 
-//     returns true when called with isEven("8")
-//     returns false when called with isEven(Infinity)
+
 //     return false when called with a boolean input like isEven(true) or isEven(false)
 // returns false when called without an argument like isEven()
 describe("isEven", function() {
@@ -79,5 +78,11 @@ describe("isEven", function() {
     })
     it("should return true when isEven('8') is executed", function () {
         expect(isEven("8")).toBe(true);
+    })
+    it("should return false when isEven(Infinity) is executed", function () {
+        expect(isEven(Infinity)).toBe(false);
+    })
+    it("should return false when isEven(true) or isEven(false) is executed", function () {
+        expect(isEven(Infinity)).toBe(false);
     })
 });
