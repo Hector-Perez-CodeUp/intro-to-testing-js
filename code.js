@@ -20,9 +20,7 @@ function sayHello(name) {
 }
 
 function isFive(input) {
-    if (typeof(input) == 5) {
-        return true;
-    } else if (input == "5") {
+    if (typeof(input) == 5 || input == "5") {
         return true;
     }
     return false;
