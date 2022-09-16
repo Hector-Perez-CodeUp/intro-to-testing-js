@@ -52,5 +52,5 @@ function isVowel(input) {
 
 
 function add(x, y) {
-    return x + y;
+    return parseInt(x) + parseInt(y);
 }
