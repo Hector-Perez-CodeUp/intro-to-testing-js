@@ -41,4 +41,11 @@ function isEven(input) {
     return false;
 }
 
-console.log((Number(false)))
+const vowels = ['a', 'e', 'i', 'o', 'u']
+function isVowel(input) {
+    if (typeof(input) != "string") {
+        return false;
+    }
+    input = input.toLowerCase()
+    return vowels.includes(input);
+}

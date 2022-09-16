@@ -90,3 +90,27 @@ describe("isEven", function() {
         expect(isEven()).toBe(false);
     })
 });
+
+
+// isVowel(4) returns false
+// isVowel(true) or isVowel(false) both return false
+// isVowel("banana") returns false
+// isVowel() returns false
+
+describe("isVowel", function() {
+    it("isVowel always returns a boolean", function () {
+        expect(typeof isVowel()).toBe("boolean");
+    })
+    it("isVowel('a') returns true", function () {
+        expect(isVowel('a')).toBe(true);
+    })
+    it("isVowel('A') returns true", function () {
+        expect(isVowel('A')).toBe(true);
+    })
+    it("isVowel('y') returns false", function () {
+        expect(isVowel('y')).toBe(false);
+    })
+    it("isVowel('4') returns false", function () {
+        expect(isVowel('4')).toBe(false);
+    })
+});
