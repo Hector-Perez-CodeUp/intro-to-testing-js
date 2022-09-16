@@ -123,8 +123,6 @@ describe("isVowel", function() {
 });
 
 
-// add("5", 6) returns 11
-// add("-4", "10") returns 6
 // add("banana", "split") returns NaN
 // add(2, "apples") returns NaN
 // add() returns NaN
@@ -137,6 +135,18 @@ describe("add", function() {
     })
     it("add('5', 6) returns -11", function () {
         expect(add('5', 6)).toBe(11);
+    })
+    it("add('-4', '10') returns 6", function () {
+        expect(add('-4', '10')).toBe(6);
+    })
+    it("add('banana', 'split') returns NaN", function () {
+        expect(add('banana', 'split')).toBeNaN();
+    })
+    it("add(2, 'apples') returns NaN", function () {
+        expect(add(2, 'apples')).toBeNaN();
+    })
+    it("add() returns NaN", function () {
+        expect(add()).toBeNaN();
     })
 });
 

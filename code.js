@@ -52,5 +52,8 @@ function isVowel(input) {
 
 
 function add(x, y) {
+    if (isNaN(x) == NaN || Number(y) == NaN) {
+        return Number(x) + Number(y);
+    }
     return parseInt(x) + parseInt(y);
 }
