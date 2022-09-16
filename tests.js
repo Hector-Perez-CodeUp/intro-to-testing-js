@@ -92,8 +92,6 @@ describe("isEven", function() {
 });
 
 
-// isVowel(4) returns false
-// isVowel(true) or isVowel(false) both return false
 // isVowel("banana") returns false
 // isVowel() returns false
 
@@ -112,5 +110,11 @@ describe("isVowel", function() {
     })
     it("isVowel('4') returns false", function () {
         expect(isVowel('4')).toBe(false);
+    })
+    it("isVowel(true) returns false", function () {
+        expect(isVowel(true)).toBe(false);
+    })
+    it("isVowel(false) returns false", function () {
+        expect(isVowel(false)).toBe(false);
     })
 });
