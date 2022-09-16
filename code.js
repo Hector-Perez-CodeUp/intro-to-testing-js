@@ -49,3 +49,8 @@ function isVowel(input) {
     input = input.toLowerCase()
     return vowels.includes(input);
 }
+
+
+function add(x, y) {
+    return x + y;
+}

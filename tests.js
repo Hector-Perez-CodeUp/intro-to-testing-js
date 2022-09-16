@@ -92,9 +92,6 @@ describe("isEven", function() {
 });
 
 
-// isVowel("banana") returns false
-// isVowel() returns false
-
 describe("isVowel", function() {
     it("isVowel always returns a boolean", function () {
         expect(typeof isVowel()).toBe("boolean");
@@ -122,5 +119,18 @@ describe("isVowel", function() {
     })
     it("isVowel() returns false", function () {
         expect(isVowel('4')).toBe(false);
+    })
+});
+
+
+// add(-3, -9) returns -12
+// add("5", 6) returns 11
+// add("-4", "10") returns 6
+// add("banana", "split") returns NaN
+// add(2, "apples") returns NaN
+// add() returns NaN
+describe("add", function() {
+    it("add(2, 3) returns 5", function () {
+        expect(add(2, 3)).toBe(5);
     })
 });
